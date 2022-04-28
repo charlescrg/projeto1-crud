@@ -2,35 +2,35 @@ package model.entities;
 
 import java.io.Serializable;
 
-public class Department implements Serializable {
-
+public class Department implements Serializable{
+	
 	private static final long serialVersionUID = 1L;
-
 	private Integer id;
-	private String name;
+	private String nome;
 	
 	public Department() {
 	}
-
-	public Department(Integer id, String name) {
+	
+	public Department(Integer id, String nome) {
+		super();
 		this.id = id;
-		this.name = name;
+		this.nome = nome;
 	}
 
 	public Integer getId() {
 		return id;
 	}
 
-	public void setId(Integer id) {
+	public String getNome() {
+		return nome;
+	}
+	public void setId(int id) {
 		this.id = id;
+		
 	}
 
-	public String getName() {
-		return name;
-	}
-
-	public void setName(String name) {
-		this.name = name;
+	public void setName(String nome) {
+		this.nome = nome;
 	}
 
 	@Override
@@ -62,4 +62,10 @@ public class Department implements Serializable {
 	public String toString() {
 		return "Department [id=" + id + ", name=" + name + "]";
 	}
+
+	
+	
+	
+	
+
 }

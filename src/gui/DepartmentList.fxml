@@ -15,16 +15,19 @@
             <Font name="System Bold" size="12.0" />
          </font>
       </Label>
+      <TableView fx:id="tableViewDepartment" prefHeight="194.0" prefWidth="359.0" VBox.vgrow="ALWAYS">
+        <columns>
+          <TableColumn fx:id="tableColumnId" prefWidth="75.0" text="id" />
+          <TableColumn fx:id="tableColumnName" prefWidth="293.59998321533203" text="nome" />
+        </columns>
+      </TableView>
       <ToolBar prefHeight="40.0" prefWidth="200.0">
         <items>
           <Button fx:id="btNew" mnemonicParsing="false" onAction="#onBtNewAction" text="Novo" />
+            <Button mnemonicParsing="false" text="Alterar" />
+            <Button mnemonicParsing="false" text="Excluir" />
+            <Button mnemonicParsing="false" text="Voltar" />
         </items>
       </ToolBar>
-      <TableView fx:id="tableViewDepartment" prefHeight="264.0" prefWidth="371.0" VBox.vgrow="ALWAYS">
-        <columns>
-          <TableColumn fx:id="tableColumnId" prefWidth="75.0" text="id" />
-          <TableColumn fx:id="tableColumnName" prefWidth="293.59998321533203" text="name" />
-        </columns>
-      </TableView>
    </children>
 </VBox>
