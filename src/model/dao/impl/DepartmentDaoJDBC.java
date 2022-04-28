@@ -77,8 +77,8 @@ public class DepartmentDaoJDBC implements DepartmentDao {
 		PreparedStatement st = null;
 		try {
 			st = conn.prepareStatement(
-				"INSERT INTO department " +
-				"(Name) " +
+				"INSERT INTO `department` " +
+				"(`Name`) " +
 				"VALUES " +
 				"(?)", 
 				Statement.RETURN_GENERATED_KEYS);
@@ -110,9 +110,9 @@ public class DepartmentDaoJDBC implements DepartmentDao {
 		PreparedStatement st = null;
 		try {
 			st = conn.prepareStatement(
-				"UPDATE department " +
-				"SET Name = ? " +
-				"WHERE Id = ?");
+				"UPDATE `department` " +
+				"SET `Name` = ? " +
+				"WHERE `Id` = ?");
 
 			st.setString(1, obj.getName());
 			st.setInt(2, obj.getId());

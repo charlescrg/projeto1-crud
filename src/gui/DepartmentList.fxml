@@ -17,8 +17,8 @@
       </Label>
       <TableView fx:id="tableViewDepartment" prefHeight="194.0" prefWidth="359.0" VBox.vgrow="ALWAYS">
         <columns>
-          <TableColumn fx:id="tableColumnId" prefWidth="75.0" text="id" />
-          <TableColumn fx:id="tableColumnName" prefWidth="293.59998321533203" text="nome" />
+          <TableColumn fx:id="tableColumnId" prefWidth="75.0" text="Id" />
+          <TableColumn fx:id="tableColumnName" prefWidth="293.59998321533203" text="Name" />
         </columns>
       </TableView>
       <ToolBar prefHeight="40.0" prefWidth="200.0">
