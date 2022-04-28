@@ -141,7 +141,7 @@ public class DepartmentDaoJDBC implements DepartmentDao {
 			throw new DbIntegrityException(e.getMessage());
 		} 
 		finally {
-			DB.closeStatement(st);
+			
 		}
 	}
 }

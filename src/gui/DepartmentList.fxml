@@ -10,23 +10,22 @@
 
 <VBox prefHeight="328.0" prefWidth="371.0" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="gui.DepartmentListController">
    <children>
-      <Label prefHeight="27.0" prefWidth="374.0" text="Cadastro de departamento">
+      <Label prefHeight="27.0" prefWidth="374.0" style="-fx-background-color: navy blue;" text="Cadastro de Departamento" textFill="WHITE">
          <font>
-            <Font name="System Bold" size="12.0" />
+            <Font name="System Bold" size="15.0" />
          </font>
       </Label>
-      <TableView fx:id="tableViewDepartment" prefHeight="194.0" prefWidth="359.0" VBox.vgrow="ALWAYS">
+      <TableView fx:id="tableViewDepartment" prefHeight="260.0" prefWidth="250.0" VBox.vgrow="ALWAYS">
         <columns>
           <TableColumn fx:id="tableColumnId" prefWidth="75.0" text="Id" />
-          <TableColumn fx:id="tableColumnName" prefWidth="293.59998321533203" text="Name" />
+          <TableColumn fx:id="tableColumnName" prefWidth="176.79999542236328" text="Name" />
+            <TableColumn fx:id="tableColumnEDIT" minWidth="2.39996337890625" prefWidth="59.199951171875" />
+            <TableColumn fx:id="tableColumnREMOVE" minWidth="0.0" prefWidth="58.4000244140625" />
         </columns>
       </TableView>
       <ToolBar prefHeight="40.0" prefWidth="200.0">
         <items>
           <Button fx:id="btNew" mnemonicParsing="false" onAction="#onBtNewAction" text="Novo" />
-            <Button mnemonicParsing="false" text="Alterar" />
-            <Button mnemonicParsing="false" text="Excluir" />
-            <Button mnemonicParsing="false" text="Voltar" />
         </items>
       </ToolBar>
    </children>
